@@ -95,20 +95,83 @@ p {
 }
 
 
-/* NAVBAR */
+/* header */
 
-/* .navbar {
-    display: flex;
-	background-color: #2477a7;
-	border-bottom: none;
-	width: 100%;
-	height: auto;
-}  */
-.navbar-nav {
+header {
+  min-height: 100vh;
+  /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/header-img.jpeg) no-repeat center center /cover; */
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/header-img.jpeg) no-repeat cover;
+
+}
+/* 
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+} */
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  padding: 30px;
+  transition: all .7s;
+}
+.navbar-brand .h2 {
+  font-size: 26px;
+  letter-spacing: .18em;
+}
+
+.navbar-brand .h4 {
+  font-size: 18px;
+  letter-spacing: .18em;
+}
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+.nav-active {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+/* end of navbar */
+
+
+
+/* OLD NAVBAR */
+
+/* .navbar-nav {
     display: flex; 
 	position: relative;
     top: 0px;
-    /* background-color: #2477a7; */
 }
 
 .nav li {
@@ -118,7 +181,6 @@ p {
 	padding-bottom: 8px;
 	font-size: 12px;
     font-family: Oswald, Helvetica, Arial, Lucida, sans-serif; 
-	/* background-color: #2477a7; */
 	border: none;
 }
 .navbar .navbar-nav {
@@ -141,11 +203,13 @@ p {
 .navbar a:hover {
 	background-color: #578DB8 !important;
 }
-/* .navbar-toggler {
+.navbar-toggler {
     background-color: #1F3E50 !important; */
-    .navbar-toggler {
-        background-color: #2477a7;
-}
+   /* } */
+
+/* ##########  NAV end ############# */
+
+/* ########## Carosel start ###### */
 .carousel-item {
     height: 85vh;
     min-height: 400px;
@@ -159,6 +223,8 @@ p {
   .carousel-control-next {
     padding-right: 35px;
   }
+
+  /* ########## Carosel END ###### */
 
 /* #############  INTRO start ############ */
 
@@ -182,7 +248,6 @@ p {
     /* background-color:rgb(255, 71, 76)*/
     padding: 15px;
     margin-left: 20px;
-
 }; 
 
 .container-deck h2 {
