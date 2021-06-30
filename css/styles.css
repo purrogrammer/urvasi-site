@@ -629,6 +629,10 @@ carosel custom css */
 }
 
 /* ##########  CONTACT section ######### */
+#contact {
+  align-items: center;
+  /* margin-left: 20%; */
+}
 
 .contact-header {
     background-color: #0d3d16;
@@ -733,6 +737,10 @@ carosel custom css */
     text-decoration: none;
     color:#aaa;
     font-size: 14px;
+  }
+
+  .contact-container {
+    margin-left: 25%;
   }
 
   /* footer CSS START */
@@ -957,3 +965,6 @@ and (min-width: 1824px) {
 		margin-top: -10px;
 	}
 }
+
+
+
